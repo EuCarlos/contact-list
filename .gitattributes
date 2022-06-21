@@ -1,3 +1,7 @@
+*.html linguist-documentation=false
+*.css linguist-documentation=false
+*.js linguist-documentation=false
+
 # See https://git-scm.com/docs/gitattributes for more about git attribute files.
 
 # Mark the database schema as having been generated.
