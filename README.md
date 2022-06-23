@@ -1,24 +1,52 @@
-# README
+# 📱 Contact List
+🌐 _Para a versão em português deste README, [clique aqui](./docs/locales/pt-br/README.md)._
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## Requirements:
+* Ruby 2.7.3
+* Rails 6.1.6
+* SQLite 1.4
 
-Things you may want to cover:
+## Installation:
 
-* Ruby version
+Clone the repo:
+```bash
+git clone https://github.com/EuCarlos/contact-list.git && cd contact-list
+```
 
-* System dependencies
+Install dependencies using Yarn or NPM:
 
-* Configuration
+```bash
+bundle install
+```
 
-* Database creation
+## Configuration
+Database creation
+```bash
+rails db:create
+```
+Database initialization
+```bash
+rails db:migrate
+```
+## Run the project
+```bash
+rails server
+```
+Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-* Database initialization
+## How to contribute to this project?
+Before starting, check and follow the instructions for contributing to the repository. If not, you can follow the instructions below:
 
-* How to run the test suite
+1. Fork the project
+2. Create a new branch: git checkout -b nova-branch
+3. Commit your changes: git commit -m 'I added something'
+4. Push to branch: git push origin nova-branch
+5. Open a Pull Request
 
-* Services (job queues, cache servers, search engines, etc.)
+## How do I report a bug or request a feature?
+If you want to report a bug or request a feature, go to [Issue](https://github.com/eucarlos/contact-list/issues) on the GitHub Project and add your request.
 
-* Deployment instructions
+___
 
-* ...
+<p align="center">
+Created with 💜 by <a href="https://github.com/eucarlos/">Carlos Alves</a></p>
