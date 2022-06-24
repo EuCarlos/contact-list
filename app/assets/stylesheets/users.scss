@@ -32,7 +32,7 @@
     }
 }
 
-a.button-register {
+a.button-register, button.button-register {
     text-decoration: none;
     color: #fff;
     background: #28eb48;
@@ -44,4 +44,32 @@ a.button-register {
     &:hover {
         background: #11BB2E;
     }
+}
+
+.actions > input[type="submit"] {
+  background: #55b042;
+  border: none;
+  padding: 1rem 1.5rem;
+  margin: 1rem 0;
+  color: #fff;
+  &:hover {
+    background: #317923;
+  }
+}
+
+.buttons-user {
+  background: #b04242;
+  border: none;
+  padding: 1rem 1.5rem;
+  margin: 1rem 0;
+  color: #fff;
+  &:hover {
+    background: #863131;
+  }
+}
+
+a.buttons-user { 
+  display: inline-block; 
+  &:hover { text-decoration: none; color: #fff; }
+  
 }
