@@ -1,16 +1,56 @@
-<footer>
-  <small>
-    <%= link_to 'Contact List. Todos os direitos reservados.', root_path %>
-  </small>
+<!--INICIO DE UM NOVO FOOTER -->
+    <footer class="site-footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12 col-md-6">
+            <h6>Sobre</h6>
+            <p class="text-justify">Este é um projeto pessoal de estudos de <strong>Ruby on Rails</strong> desenvolvido por <strong><a href="http://github.com/eucarlos">Carlos Alves</a></strong>, o objetivo deste projeto é desenvolver uma aplicação web que cria, lista, edita e remova contatos sendo támbem capaz de registrar e fazer login de usúario fazendo relacionamento entre tabelas Usuário e Contatos.</p>
+          </div>
 
-  <nav>
-    <ul>
-      <li>
-        <%= link_to 'Sobre', sobre_path %>
-      </li>
-      <li>
-        <%= link_to 'Contato', contato_path %>
-      </li>
-    </ul>
-  </nav>
+          <div class="col-xs-6 col-md-3">
+            <h6>Tecnologias</h6>
+            <ul class="footer-links">
+              <li>Ruby</li>
+              <li>Rails</li>
+              <li>Sass</li>
+              <li>Figma</li>
+              <li>Outros</li>
+            </ul>
+          </div>
+
+          <div class="col-xs-6 col-md-3">
+            <h6>Links</h6>
+            <ul class="footer-links">
+              <li><%= link_to 'Sobre', sobre_path %></li>
+              <li><%= link_to 'Lista de Contatos', contato_path %></li>
+              <li><a href="http://github.com/eucarlos/contact-list">Contribuir</a></li>
+              <li><a href="http://github.com/eucarlos">Github</a></li>
+              <li><a href="https://carlosalves.vercel.app/contato">Contate-nos</a></li>
+            </ul>
+          </div>
+        </div>
+        <hr>
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-8 col-sm-6 col-xs-12">
+            <p class="copyright-text">Copyright &copy; 2022 Todos os direitos reservados para 
+         <a href="https://carlosalves.vercel.app/">Carlos Alves</a>.
+            </p>
+          </div>
+
+          <div class="col-md-4 col-sm-6 col-xs-12">
+            <ul class="social-icons">
+              <li>
+                <a class="github" href="http://github.com/eucarlos"><i class="fa fa-github"></i></a></li>
+              <li>
+                <a class="dev" href="http://dev.to/eucarlos"><i class="fa fa-book"></i></a></li>
+              <li>
+                <a class="dribbble" href="https://dribbble.com/eucarlos"><i class="fa fa-dribbble"></i></a></li>
+              <li>
+                <a class="linkedin" href="https://www.linkedin.com/in/josecarlos98/"><i class="fa fa-linkedin"></i></a></li>   
+            </ul>
+          </div>
+        </div>
+      </div>
 </footer>
