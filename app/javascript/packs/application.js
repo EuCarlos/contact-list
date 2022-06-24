@@ -5,6 +5,7 @@ import "channels"
 import bootstrap from "bootstrap";  
 import BootstrapStorage from "bootstrap/modal";  
 import jQuery from "jquery";
+import "require_tree";
 
 Rails.start()
 Turbolinks.start()

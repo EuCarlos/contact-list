@@ -1,6 +1,13 @@
-<div class="jumbotron">
-  <h1>Contact List</h1>
-  <p>Gerencie seus contatos em qualquer lugar!</p>
-  
-  <p><%= link_to 'Crie Sua Conta', new_user_path, class: 'btn btn-primary btn-lg' %></p>
+<div class="content-wrapper-home">
+  <div class="content-text-home">
+    <h1>Contact List</h1>
+    <p class="subtitle">Gerencie seus contatos em qualquer lugar! </p>
+
+    <p><%= link_to 'Crie Sua Conta', new_user_path, class: 'button-register' %></p>
+  </div>
+
+  <div class='image-home'>
+    <%= image_tag("/images/home.jpg", :alt => "Mesa de computador com teclado, mouse, mousepad e caneta") %>
+  </div>
+
 </div>
