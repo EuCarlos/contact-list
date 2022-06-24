@@ -34,6 +34,35 @@ rails server
 ```
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
+## Routes
+| Prefix | Verb | URI Pattern | Controller#Action |
+| :----: | :---:| :---------- | :---------------- |
+| root | GET | `/` | `static_pages#index` |
+| sobre | GET | `/sobre(.:format)` | `static_pages#sobre` |
+| contato | GET | `/contato(.:format)`| `static_pages#contato` |
+| entrar | GET | `/entrar(.:format)` | `sessions#new` |
+|| POST  | `/entrar(.:format)` | `sessions#create` |
+| sair | DELETE| `/sair(.:format)` | `sessions#destroy` |
+| contacts | GET | `/contacts(.:format)`| `contacts#index` |
+|| POST| `/contacts(.:format)`| `contacts#create` |
+| new_contact | GET | `/contacts/new(.:format)`| `contacts#new` |
+| edit_contact | GET | `/contacts/:id/edit(.:format)` | `contacts#edit` |
+| contact | GET | `/contacts/:id(.:format)`| `contacts#show` |
+|| PATCH | `/contacts/:id(.:format)`| `contacts#update` |
+|| PUT | `/contacts/:id(.:format)`| `contacts#update` |
+|| DELETE| `/contacts/:id(.:format)`| `contacts#destroy` |
+| users | POST| `/users(.:format)`| `users#create` |
+| new_user | GET | `/users/new(.:format)`|`users#new` |
+| edit_user | GET | `/users/:id/edit(.:format)`| `users#edit` |
+| user | GET | `/users/:id(.:format)`|`users#show` |
+|| PATCH| `/users/:id(.:format)`|`users#update` |
+|| PUT | `/users/:id(.:format)`|`users#update` |
+| sessions | POST | `/sessions(.:format)`| `sessions#create` |
+| new_session | GET | `/sessions/new(.:format)`| `sessions#new` |
+| session | DELETE| `/sessions/:id(.:format)`| `sessions#destroy` |
+
+</pre>
+
 ## How to contribute to this project?
 Before starting, check and follow the instructions for contributing to the repository. If not, you can follow the instructions below:
 
