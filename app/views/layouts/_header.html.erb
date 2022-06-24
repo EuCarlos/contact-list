@@ -1,46 +1,53 @@
-<nav class="navbar navbar-inverse navbar-static-top">
-
-    <div class="container-fluid">
-        <div class="navbar-header">
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#expanded-menu" aria-expanded=" false">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </button>
-            <%= link_to 'Contact List', root_url, class: 'navbar-brand' %>
+<header>
+    <div class="menu">
+        <input type="checkbox" name="" id="check">
+        
+        <div class="logo-container">
+            <span class="logo"><i class="fa fa-list"></i> <%= link_to 'Contact List', root_url, class: 'logo-font' %></span>
         </div>
 
-  <!-- Conteudo exibido em telas maiores e que serao escondidos em telas menores -->
-        <div class="collapse navbar-collapse" id="expanded-menu">
-            <ul class="nav navbar-nav">
-                <% if !user_signed_in? %>
-                    <li class="active">
-                        <%= link_to 'Nova Conta', new_user_path %>
-                    </li>
-                <% end %>
-            </ul>
+        <div class="nav-btn">
+            <div class="nav-links">
+                <ul>
+                    <% if !user_signed_in? %>
+                        <li class="nav-link" style="--i: .6s">
+                            <%= link_to 'Nova Conta', new_user_path %>
+                        </li>
+                    <% end %>
 
-            <ul class="nav navbar-nav navbar-right">
-                <% if !user_signed_in? %>
-                    <li>
+                    <% if !user_signed_in? %>
+                    <li class="nav-link" style="--i: .6s">
                         <%= link_to 'Entrar', entrar_path %>
                     </li>
-                <% else %>
-                    <li class="nav navbar-nav">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
-                            bem vindo, <%= current_user.name %> <span class="caret"></span>
-                        </a>
-                        <ul class="active">
-                            <li><%= link_to 'Minha Pagina', contacts_path %></li>
-                            <li><%= link_to 'Editar', edit_user_path(current_user) %></li>
-                            <li class="divider" role="separator"></li>
-                            <li><%= link_to 'Sair', sair_path, method: :delete %></li>
-                            <a href="/sair" data-method="delete" rel="nofollow">Sair</a>
-                        </ul>
+                    <% else %>                        
+                        <li class="nav-link" style="--i: 1.1s">
+                            <a href="#">Perfil<i class="fa fa-caret-down"></i></a>
+                            <div class="dropdown">
+                                <ul>
+                                    <li class="dropdown-link">
+                                        <%= link_to 'Minha Pagina', contacts_path %>
+                                    </li>
+                                    <li class="dropdown-link">
+                                        <%= link_to 'Editar', edit_user_path(current_user), class: 'last' %>
+                                    </li>
+                                    <div class="arrow"></div>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="nav-link" style="--i: 1.35s">
+                            <%= link_to 'Sair', sair_path, method: :delete, id: 'exit' %>
+                        </li>
+                    <% end %>
                     </li>
-                <% end %>
-            </ul>
+                    
+                </ul>
+            </div>
+        </div>
+
+        <div class="icon-menu-container">
+            <div class="icon-menu">
+                <div></div>
+            </div>
         </div>
     </div>
-</nav>
+</header>

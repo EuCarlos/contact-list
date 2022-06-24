@@ -4,6 +4,7 @@
         "activerecord",
         "activestorage",
         "corejs",
+        "dribbble",
         "entrypoints",
         "precompilation",
         "Turbolinks",
