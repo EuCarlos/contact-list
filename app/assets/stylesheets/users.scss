@@ -1,3 +1,47 @@
-// Place all the styles related to the Users controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: https://sass-lang.com/
+// TABELAS
+.rwd-table {
+	background: #252422;
+	color: #fff;
+	border-radius: .4em;
+	overflow: hidden;
+	width: 100%;
+	tr {
+	  border-color: lighten(#34495E, 10%);
+	}
+	th, td {
+	  margin: .5em 1em;
+	  @media (min-width: 480px) { 
+		padding: 1em !important; 
+	  }
+	}
+	th, td:before {
+	  color: #28eb48;
+	}
+    td.fixed-width-table {
+        width: 100px;
+        &.show-table { color: #11BB2E; }
+        &.edit-table { color: #3e30c5; }
+        &.delete-table { color: #b92520; }
+        & > a { 
+          text-decoration: none; 
+          color: #c5c5c5; 
+          &:hover {
+            color: #fff;
+          }
+        }
+    }
+}
+
+a.button-register {
+    text-decoration: none;
+    color: #fff;
+    background: #28eb48;
+    padding: 1.5rem 2.5rem;
+    border-radius: 50px;
+    margin: 1rem;
+    display: inline-block;
+    font-weight: bold;
+    &:hover {
+        background: #11BB2E;
+    }
+}

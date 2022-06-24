@@ -19,7 +19,11 @@
                     <li class="nav-link" style="--i: .6s">
                         <%= link_to 'Entrar', entrar_path %>
                     </li>
-                    <% else %>                        
+                    <% else %>
+                        <li class="profile">
+                            <i class="fa fa-user" aria-hidden="true"></i>
+                            <%= current_user.name %>
+                        </li>
                         <li class="nav-link" style="--i: 1.1s">
                             <a href="#">Perfil<i class="fa fa-caret-down"></i></a>
                             <div class="dropdown">
