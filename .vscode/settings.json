@@ -3,6 +3,8 @@
         "actioncable",
         "activerecord",
         "activestorage",
+        "contato",
+        "contatos",
         "corejs",
         "dribbble",
         "entrypoints",
