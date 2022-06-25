@@ -34,6 +34,29 @@ rails server
 ```
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
+## Prototype in figma
+For the development of this project, a prototype was created in figma. To download the figma file, just go to: `./docs/design/ContactList.fig` or [click here](./docs/design/ContactList.fig).
+## 1. Resources
+![resources that are reused to create the site such as: header, footer and icons](./docs/images/1-recursos.png)
+
+## 2. Home page
+![prototype with computer table image on the right and create account button on the left](./docs/images/2-tela-inicial.png)
+
+## 3. Register page
+![prototype with registration form with the fields: name, e-mail, password and password confirmation](./docs/images/3-cadastre-se.png)
+
+## 4. Login page
+![prototype with login form with fields: email and password](./docs/images/4-entrar.png)
+
+## 5. Contact list page
+![prototype with contact list table with name, phone and buttons: show, edit and delete](./docs/images/5-lista-de-contatos.png)
+
+## 6. New contact page
+![prototype of new contacts with the fields: name, phone, create contact and back buttons](./docs/images/6-novo-contato.png)
+
+## 7. Edit profile page
+![prototype with edit profile form with fields: name, email, password and password confirmation](./docs/images/7-editar-perfil.png)
+
 ## Routes
 | Prefix | Verb | URI Pattern | Controller#Action |
 | :----: | :---:| :---------- | :---------------- |
